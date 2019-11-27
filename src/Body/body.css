@@ -1,0 +1,53 @@
+    .bodyPage{
+        position: absolute;
+        top: 15%;
+        width: 100%;
+    }
+    .bodyPage11{
+        float: left;
+        width: 50%;
+        height: 290px;
+        
+    }
+    .bodyPage12{
+        float: left;
+        width: 31%;
+        height: 290px;
+        
+
+
+
+    }
+    .bodyPage111{
+       height: 300px;
+       width: 50%;
+        float: left;
+
+    }
+    
+    
+    
+    .bodyPage1{
+        width: 50%;
+    height: 40px; 
+    float: left;
+    border: 1px;
+    text-align: center
+    }
+
+    .bodyPage22{
+        width: 100%;
+    }
+    .bodyPage23{
+        height: 500px;
+        position: absolute;
+        top :0%;
+        right: 0%;
+        width: 280px;
+    }
+
+    .bodyPage2{
+        width: 50%;
+        height: 200px;
+        
+        }

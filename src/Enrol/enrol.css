@@ -1,0 +1,57 @@
+.land{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    height: 400px;
+    width: 500px;
+    font-size: 20px;
+    border: 2px;
+    color: black;
+    background: url('./../pictrue/5.jpg') no-repeat;
+    background-size: 100%;
+}
+.land1{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+
+
+}
+
+.land2{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+
+
+}
+.land21{
+    width: 100%;
+    height: 30px;
+   float: left;
+  
+
+}
+.land22{
+   float: left;
+    width: 250px;
+   
+    
+    
+}
+.land23{
+    width: 20%;
+    float: left;
+    height: 100px;
+}
+
+.land3{
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    width: 500px;
+    height: 200px;
+    
+}

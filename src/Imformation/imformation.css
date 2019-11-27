@@ -1,0 +1,22 @@
+.imformation{
+    width: 100%;
+    height: 700px;
+   
+
+}
+.imformation1{
+    height: 600px;
+    width: 258px;
+    float: left;
+}
+.imformation2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    width: 25%;
+    
+    
+}   
+.imformation21{
+    float: left;
+}

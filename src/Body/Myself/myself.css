@@ -1,0 +1,59 @@
+.payfor1{
+    position: absolute;
+    left: 3%;
+    font-size: 50px;
+    top: 4%;
+}
+.myself1{
+    position: absolute;
+    top: 17%;
+    left: 10%;
+    
+
+
+}
+
+.myself{
+    position: absolute;
+    left: 25%;
+    top: 8%;
+    
+}
+.myself2{
+    position: absolute;
+    top: 26%;
+    left: 25%;
+
+
+}
+.myself21{
+    width: 600px;
+
+}
+.myself22{
+    position: absolute;
+    left: 2%;
+    top: 28%;
+
+}
+.myself23{
+    position: absolute;
+    left: 60%;
+    top: 105%;
+    height: 100px;
+
+}
+.myself3{
+    position: absolute;
+    left: 52%;
+    top: 78%;
+    height: 100px;
+
+}
+.myself4{
+    position: absolute;
+    right: 10%;
+    
+    height: 100px;
+
+}

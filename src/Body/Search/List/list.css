@@ -1,0 +1,12 @@
+.list{
+
+    left: 20%;
+    position: absolute;
+    top: 25%;
+    width: 900px;
+}
+.list1{
+    height: 300px;
+    width: 280px;
+    float: left;
+}
