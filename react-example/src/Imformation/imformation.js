@@ -2,7 +2,7 @@ import React from 'react'
 import './imformation.css'
 import { Comment, Icon, Tooltip, Avatar,Menu,Card,Spin} from 'antd';
 import moment from 'moment';
-import Picture17 from './../pictrue/17.jpg'
+
 
 const { SubMenu } = Menu;
 var imformationCss = require('./imformation.css')
@@ -131,7 +131,20 @@ export default class ImformationPage extends React.Component{
 
                  </div>
                     <div>
-                      <img src={Picture17}></img>
+                      <form>
+                        <tr>
+                          <th>收到的消息
+                          </th>
+                          </tr>
+                    <tr>
+                      <td>
+                        暂时没有消息
+
+                      </td>
+                    </tr>
+
+
+                      </form>
                     </div>
                     <div className={imformationCss.imformation2}>
                       <div className={imformationCss.imformation21}>

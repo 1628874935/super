@@ -1,7 +1,7 @@
 import React from "react"
 import './payfor.css'
 import { Button,Icon,Card,Modal,Steps,Radio,Input} from 'antd';
-import Picture18 from './../../pictrue/18.jpg'
+import Picture24 from './../../pictrue/24.jpg';
 const { Step } = Steps;
 
 
@@ -149,33 +149,55 @@ export default class PayforPage extends React.Component{
 
 
                 <div className={payforCss.payfor3}>
-                        <img src={Picture18}></img>
+                        <form>
+                            <tr><th>商品信息</th></tr>
+                            <tr>商品编号54348432734</tr>
+                            <tr>发出地：浙江宁波</tr>
+                            <tr>
+                                <td>
+                                    Apple/苹果 iPhone 6s Plus 4G全网通手机苹果6sp 7 p xr xs max
+                                </td>
+                                <td> <font color="red" size="large">￥2799 山东 济南
+                                    月销387 包</font>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><Button href="/shoppingcart">返回购物车</Button>
+                                </td>
+                                <td>
+                                <Button type="primary" onClick={this.showModal} size='default'>
+                                    提交账单
+                                </Button>
+                                <Modal width='400px'
+                                visible={visible}
+                                title='支付'
+                                onOk={this.handleOk}
+                                onCancel={this.handleCancel}
+                                footer={[
+                                    <Button key="back" onClick={this.handleCancel}>
+                                    返回
+                                    </Button>,
+                                    <Button key="submit" type="primary" loading={loading} 
+                                    href='/homepage'>
+                                        提交
+                                                    </Button> ,
+                                        ]}>
+                                    <div >
+                                        <img src={Picture24} width="300px" height="220px"></img>
+                                        <br/><br/><font color="red">支付二维码</font>
+                                        </div>        
+                                    
+                                    
+                                </Modal>
+
+                                </td>
+                                </tr>
+                        </form>
 
                 </div>
 
-                <div className={payforCss.payfor4}>
-                    <Button type="primary" onClick={this.showModal} size='large'>
-                        提交账单
-                    </Button>
-                    <Modal width='400px'
-                    visible={visible}
-                    title='支付'
-                    onOk={this.handleOk}
-                    onCancel={this.handleCancel}
-                    footer={[
-                        <Button key="back" onClick={this.handleCancel}>
-                        Return
-                        </Button>,
-                        <Button key="submit" type="primary" loading={loading} 
-                         href='/homepage'>
-                            Submit
-                            </Button> ,
-                            ]}>
-                        <p><Input placeholder="支付宝账号"></Input></p>        
-                        <p><Input.Password placeholder="六位支付密码" /></p>
-                        
-                        </Modal>    
-                </div>
+               
 
             </div>
         )
