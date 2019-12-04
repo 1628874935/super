@@ -3,15 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter,Switch,Route,Redirect} from 'react-router-dom';
-import HomePage from './Homepage/homepage'
+
 import LoginPage from './Login/login'
 import HomePageone from './Homepage/homepageone'
 import ImformationPage from './Imformation/imformation';
-import myselfPage from './Body/Myself/myself';
-import SearchPage from "./Body/Search/search"
-import ShoppingPage from './ShoppingCart/shoppingcart';
+
 import EnrolPage from './Enrol/enrol'
-import PayforPage from './ShoppingCart/Payfor/payfor';
+
 
 
 
@@ -31,14 +29,14 @@ var indexCss = require('./index.css');
 
                         <Switch>
                         <Route exact path='/' component={HomePageone}></Route>
-                        <Route exact path='/homepage' component={HomePage}></Route>
+                        
                         <Route exact path='/login' component={LoginPage}></Route>
                         <Route exact path='/enrol' component={EnrolPage}></Route>
-                        <Route exact path='/shoppingcart' component={ShoppingPage}></Route>
-                        <Route exact path='/payfor' component={PayforPage}></Route>
+                       
+                       
                         <Route exact path='/imformation' component={ImformationPage}></Route>
-                        <Route exact path='/myself' component={myselfPage}></Route>
-                        <Route exact patn='/search' component={SearchPage}></Route>
+                        
+                       
                         
                         <Redirect path='/' component={HomePageone}></Redirect>
                         

@@ -64,7 +64,7 @@ render(){
                         登录</Button>
                         
                     </div> 
-                    <div className={loginCss.land25}><Button shape='round' type='primary'  >注册</Button></div>
+                    <div className={loginCss.land25}><Button shape='round' type='primary'  href='/enrol'>注册</Button></div>
                     </div>
                 }
    

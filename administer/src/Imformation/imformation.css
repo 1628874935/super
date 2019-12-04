@@ -1,0 +1,39 @@
+.imformation{
+  
+   
+
+}
+.imformation1{
+    height: 600px;
+    width: 258px;
+    float: left;
+}
+.imformation2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    width: 25%;
+    
+    
+}   
+.imformation21{
+    position: absolute;
+    left: 17%;
+    border: 2px solid black;
+    width: 800px;
+    height: 300px;
+}
+
+.imformation22{
+    position: absolute;
+    left: 17%;
+    top: 40%;
+    border: 2px solid black;
+    width: 800px;
+    height: 200px;
+}
+
+.imformation23{
+   
+    
+}
