@@ -21,19 +21,20 @@
     left: 17%;
     border: 2px solid black;
     width: 800px;
-    height: 300px;
+    height: 287px;
 }
 
 .imformation22{
     position: absolute;
     left: 17%;
-    top: 40%;
+    top: 39%;
     border: 2px solid black;
     width: 800px;
-    height: 200px;
+    height: 287px;
 }
 
 .imformation23{
-   
-    
+   border: 1px solid black;
+    font-size: 20px;
+    background-color: rgb(218, 215, 202);
 }

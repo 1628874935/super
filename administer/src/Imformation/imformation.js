@@ -91,7 +91,7 @@ export default class ImformationPage extends React.Component{
                     >
                     <Menu.ItemGroup key="g1" title="已售商品" >
                         <Menu.Item key="1" >信息</Menu.Item>
-                        <Menu.Item key="2" onClick={this.number}>增加</Menu.Item>
+                        <Menu.Item key="2" onClick={this.number} onClick={this.add}>增加</Menu.Item>
                         <Menu.Item key="3">删除</Menu.Item>
                         <Menu.Item key="4">更改</Menu.Item>
                     </Menu.ItemGroup>
@@ -122,35 +122,64 @@ export default class ImformationPage extends React.Component{
 
                  </div>
                     <div className={imformationCss.imformation21}>
-                      <table cellspacing="0">
-                      <tr>
-                        <td aligin="center">苹果</td>
-                        <td>小明</td>
-                        <td>5kg*10kg/元</td>
-                        <td>电话：1533334345</td>
+                      <table cellspacing="0"  cellPadding="20px">
+                      <tr >
+                        <td className={imformationCss.imformation23}>
+                          苹果
+                          </td>
+                        <td className={imformationCss.imformation23}>小明</td>
+                        <td className={imformationCss.imformation23}>5kg*10kg/元</td>
+                        <td className={imformationCss.imformation23}>电话：1533334345</td>
                       </tr>
                       <tr>
-                      <td>苹果</td>
-                        <td>小明</td>
-                        <td>5kg*10kg/元</td>
-                        <td>电话：1533334345</td>
+                      <td className={imformationCss.imformation23}>苹果</td>
+                        <td className={imformationCss.imformation23}>小明</td>
+                        <td className={imformationCss.imformation23}>5kg*10kg/元</td>
+                        <td className={imformationCss.imformation23}>电话：1533334345</td>
                       </tr>
                       <tr>
-                      <td>苹果</td>
-                        <td>小明</td>
-                        <td>5kg*10kg/元</td>
-                        <td>电话：1533334345</td>
+                      <td className={imformationCss.imformation23}>苹果</td>
+                        <td className={imformationCss.imformation23}>小明</td>
+                        <td className={imformationCss.imformation23}>5kg*10kg/元</td>
+                        <td className={imformationCss.imformation23}>电话：1533334345</td>
                       </tr>
                       <tr>
-                      <td>苹果</td>
-                        <td>小明</td>
-                        <td>5kg*10kg/元</td>
-                        <td>电话：1533334345</td>
+                      <td className={imformationCss.imformation23}>苹果</td>
+                        <td className={imformationCss.imformation23}>小明</td>
+                        <td className={imformationCss.imformation23}>5kg*10kg/元</td>
+                        <td className={imformationCss.imformation23}>电话：1533334345</td>
                       </tr>
                       </table>
                     </div>
                     <div className={imformationCss.imformation22}>
-                     
+                    <table cellspacing="0" cellPadding="20px">
+                      <tr >
+                        <td className={imformationCss.imformation23}>
+                          苹果
+                          </td>
+                        <td className={imformationCss.imformation23}>小明</td>
+                        <td className={imformationCss.imformation23}>5kg*10kg/元</td>
+                        <td className={imformationCss.imformation23}>电话：1533334345</td>
+                      </tr>
+                      <tr>
+                      <td className={imformationCss.imformation23}>苹果</td>
+                        <td className={imformationCss.imformation23}>小明</td>
+                        <td className={imformationCss.imformation23}>5kg*10kg/元</td>
+                        <td className={imformationCss.imformation23}>电话：1533334345</td>
+                      </tr>
+                      <tr>
+                      <td className={imformationCss.imformation23}>苹果</td>
+                        <td className={imformationCss.imformation23}>小明</td>
+                        <td className={imformationCss.imformation23}>5kg*10kg/元</td>
+                        <td className={imformationCss.imformation23}>电话：1533334345</td>
+                      </tr>
+                      <tr>
+                      <td className={imformationCss.imformation23}>苹果</td>
+                        <td className={imformationCss.imformation23}>小明</td>
+                        <td className={imformationCss.imformation23}>5kg*10kg/元</td>
+                        <td className={imformationCss.imformation23}>电话：1533334345</td>
+                      </tr>
+                      </table>
 
 
                        
