@@ -1,19 +1,15 @@
-.imformation{
-  
-   
 
-}
 .imformation1{
     height: 600px;
     width: 258px;
-    float: left;
-}
-.imformation2{
     position: absolute;
-    right: 0%;
-    top: 0%;
-    width: 25%;
+    top: 1%;
+    left: 2%;
+}
+.imformation{
     
+   width: 800px;
+   height: 800px;
     
 }   
 .imformation21{
@@ -37,4 +33,30 @@
    border: 1px solid black;
     font-size: 20px;
     background-color: rgb(218, 215, 202);
+}
+
+.imformation24{
+    position: absolute;
+    left: 21%;
+ 
+    width: 600px;
+    height: 500px;
+    font-size: 20px;
+    
+}
+.imformation25{
+    position: absolute;
+    top: 1%;
+    right: 5%;
+    width: 450px;
+ 
+
+}
+.imformation26{
+    position: absolute;
+    top: 46%;
+    right: 12%;
+    width: 350px;
+ 
+
 }

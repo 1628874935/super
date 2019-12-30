@@ -116,7 +116,7 @@ export default class EnrolPage extends React.Component{
                         <Button>设置密码</Button>
                     </Tooltip>
                     <div className={loginCss.land22}>
-                    <Input.Password placeholder="不能有特殊字符" name="password" value={this.state.Password}  onChange={e=>this.changeValue(e)}/>
+                    <Input.Password placeholder="不能有特殊字符" name="password" value={this.state.password}  onChange={e=>this.changeValue(e)}/>
                     </div>
                 </div>
             </div>
