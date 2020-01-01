@@ -8,13 +8,10 @@ var loginCss = require('./login.css');
 export default class LoginPage extends React.Component{
 
     constructor(props){
-        super(props)
+        super(props);
         this.state={
-            password:'',
-            username:''
-
-            
-            
+            username: window.localStorage.getItem('username'),
+            password: window.localStorage.getItem('password')
         }
 
 
@@ -30,18 +27,64 @@ export default class LoginPage extends React.Component{
 
     }
 
-    login=e=>{
-        if(this.state.username=='12345'&&this.state.password=='12345'){
-            alert('登陆成功')
-            window.localStorage.setItem('username','笑脸一号')
-            window.localStorage.setItem('token','11')  
+    // login=e=>{
+    //     if(this.state.name==this.state.username&&this.state.password1==this.state.password){
+    //         alert('登陆成功')
+    //         window.localStorage.setItem('username',this.state.name)
+    //         window.localStorage.setItem('token','11')  
 
-            }else{
+    //         }else{
 
+    //             alert('登陆失败')
+    //         }
+            
+    //     }
+
+        login = e=>{
+            //XHR
+        var xhr = new XMLHttpRequest()
+        var data ={
+           
+            "adname":this.state.adname,
+            "adpassword1":this.state.adpassword1
+
+        }
+
+        //open连接
+        xhr.open("post","/user/register")
+        //配置响应函数
+        xhr.onreadystatechange=function(props){
+            if(xhr.readyState==4){
+                if(xhr.status==200){
+                    console.log(xhr.responseText)
+                    var result = JSON.parse(xhr.responseText)
+                    if(this.state.name==this.state.username&&this.state.password1==this.state.password){
+                        alert('登陆成功')
+                        window.localStorage.setItem('username',this.state.name)
+                        window.localStorage.setItem('token','11')  
+            
+                        }
+                    this.props.histroy.push("/homepage")
+                    }
+                }
+
+            
+            else{
                 alert('登陆失败')
             }
-            
+
         }
+        //发送数据
+        xhr.setRequestHeader('content-type','application/json');
+
+        xhr.send(JSON.stringify(data))
+
+        //fetch
+
+        //axios
+        }
+
+
 
     
 render(){
@@ -57,7 +100,7 @@ render(){
             </div>
 
             
-                if(this.state.username==12345&&this.state.password==12345){
+                if(this.state.name==this.state.username&&this.state.password1==this.state.password){
                     userp =
                     <div className={loginCss.land23}>
                     <div className={loginCss.land24}><Button shape='round' type='primary' onClick={this.login} href='/'>
@@ -83,7 +126,7 @@ render(){
                     </Tooltip>
                     <div className={loginCss.land22}>
                     <Input.TextArea placeholder="11位数字"  
-                        name='username' value={this.state.username} onChange={this.changValue}/>
+                        name='adname' value={this.state.adname} onChange={this.changValue}/>
                     </div>
                     
                 </div>
@@ -93,7 +136,7 @@ render(){
                     </Tooltip>
                     <div className={loginCss.land22}>
                     <Input.Password placeholder="不能有特殊字符" 
-                        name='password' value={this.state.password} onChange={this.changValue}/>
+                        name='adpassword1' value={this.state.adpassword1} onChange={this.changValue}/>
                     </div>
                 </div>
             </div>
@@ -108,5 +151,4 @@ render(){
     )
 
     }
-
 }

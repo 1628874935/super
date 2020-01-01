@@ -1,6 +1,6 @@
 import React from "react"
 import './payfor.css'
-import { Button,Icon,Card,Modal,Steps,Radio,Input} from 'antd';
+import { Button,Icon,Card,Modal,Steps,Radio,Input,message} from 'antd';
 import Picture24 from './../../pictrue/24.jpg';
 const { Step } = Steps;
 
@@ -68,6 +68,63 @@ export default class PayforPage extends React.Component{
 
 
 
+            changValue = e=>{
+                this.setState({
+                    [e.target.name]:e.target.value
+                  
+        
+                })
+            }
+        
+            payfor = e=>{
+                //XHR
+            var xhr = new XMLHttpRequest()
+            var data ={
+                "adress1":this.state.adress1,
+                "adress2":this.state.adress2,
+                "adress3":this.state.adress3
+                
+        
+            }
+        
+            //open连接
+            xhr.open("post","/user/register")
+            //配置响应函数
+            xhr.onreadystatechange=function(props){
+                if(xhr.readyState==4){
+                    if(xhr.status==200){
+                        console.log(xhr.responseText)
+                        var result = JSON.parse(xhr.responseText)
+                        if(result.state==2){
+                            
+                        message.info("用户名已经存在")
+                        }else{
+                            
+                        message.info("注册成功")
+                        this.props.histroy.push("/homepage")
+                        }
+                    }
+        
+                }
+                else{
+                    message.info(xhr.status)
+                }
+        
+            }
+            //发送数据
+            xhr.setRequestHeader('content-type','application/json');
+        
+            xhr.send(JSON.stringify(data))
+        
+            //fetch
+        
+            //axios
+
+        }
+
+
+
+
     render(){
         const { visible, loading } = this.state;
 
@@ -114,9 +171,9 @@ export default class PayforPage extends React.Component{
                             <div className={payforCss.payfor21}>
                                 <Radio value={1}>
                                     <Card title="我的地址栏" extra={<a href="#">More</a>} style={{ width: 300 }}>
-                                        <p>四川省 成都市 金堂县 三星镇</p>
-                                        <p>学府大道8号</p>
-                                        <p>希望学院 13675233786</p>
+                                        <p name="adress1" value={this.state.adress}  onChange={e=>this.changeValue(e)}>四川省 成都市 金堂县 三星镇</p>
+                                        <p name="adress2" value={this.state.adress2}  onChange={e=>this.changeValue(e)}>学府大道8号</p>
+                                        <p name="adress3" value={this.state.adress3}  onChange={e=>this.changeValue(e)}>希望学院 13675233786</p>
                                     </Card>
                                 </Radio>
                             </div>
