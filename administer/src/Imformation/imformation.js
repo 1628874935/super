@@ -98,7 +98,7 @@ export default class ImformationPage extends React.Component{
     };
   }
   onSave(data) {
-    //点击取消按钮时还原该行为显示狀态
+   
     data.edit = false
     if (data._initName !== undefined) {
       data.name = data._initName
@@ -108,7 +108,7 @@ export default class ImformationPage extends React.Component{
     }
   }
   onEdit(data) {
-    //点击取消按钮时还原该行为编辑狀态，再点击还原
+  
     var editable = data.edit = !data.edit
     if (editable) {
       data._name = data.name
@@ -135,6 +135,9 @@ export default class ImformationPage extends React.Component{
   }
 
 
+
+
+  
 
 
 
